@@ -1,0 +1,4 @@
+
+$("#<%= dom_id(@task) %>").remove()
+$('#completedtask').append("<%= escape_javascript(render :partial => "tasks/show", 
+           :object => @task, :locals => { :status => 'C' }, :as => :task) %>");

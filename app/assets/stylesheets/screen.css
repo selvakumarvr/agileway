@@ -1,0 +1,1295 @@
+/*-------------------------------------------------
+PAGE BODY
+-------------------------------------------------*/
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Lucida Grande", verdana, arial, helvetica, sans-serif;
+  color: #333;
+  background-color: #fff;
+  text-align: center;
+}
+
+/* Make sure the lists show the right font */
+div.tadalist { font-family: "Lucida Grande", verdana, arial, helvetica, sans-serif; }
+
+/*-------------------------------------------------
+GLOBALS & GENERAL CASES
+-------------------------------------------------*/
+
+a {text-decoration: underline; padding: 1px; }
+a:link { color: #03c; }
+a:visited { color: #03c; }
+a:hover { color: #fff; background-color: #30c; text-decoration: none; }
+
+img {
+  border: none;
+}
+
+a.image:link, a.image:visited, a.image:hover {
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+
+a.admin:link, a.admin:visited {
+  color: #f00;
+  font-family: verdana;
+  font-size: 11px;
+  font-weight: normal;
+}
+
+a.admin:hover { color: #fff; background: #f00; }
+
+a.black:link, a.black:visited {
+  color: #000;
+}
+
+a.black:hover {
+  color: #fff;
+  background: #000;
+}
+
+a.white:link, a.white:visited {
+  color: #fff;
+}
+
+a.white:hover {
+  color: #000;
+  background: #fff;
+}
+
+a.anchor:link, a.anchor:visited, a.anchor:hover {
+  color: #fff;
+  background: #fff;
+  font-size: 0px;
+  text-decoration: none;
+  padding: 0;
+}
+
+form {
+  margin: 0; padding: 0;
+}
+
+p {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+small {
+  font-size: 10px;
+  line-height: 13px;
+}
+
+ol, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+
+li {
+  font-size: 10px;
+  line-height: 13px;
+  padding: 3px 0;
+}
+
+li img {
+  padding-right: 3px;
+}
+
+h1 {
+  font-family: "Lucida Grande", arial, sans-serif;
+  padding: 0;
+  border-bottom: 0;
+  margin: 0;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: "Lucida Grande", arial, sans-serif;
+  margin: 20px 0 5px 0px;
+  color: #333;
+  font-size: 14px;
+  padding: 0;
+}
+
+h3 {
+  margin: 20px 0 0 0;
+  color: #666;
+  font-family: "Lucida Grande", arial, sans-serif;
+  font-size: 14px;
+  padding: 0;
+}
+
+td, th {
+  padding: 3px;
+}
+
+.red {
+  color: #900;
+}
+
+.blue {
+  color: #06c;
+  }
+
+.green {
+  color: #390;
+  }
+
+.highlight {
+  background-color: #ffc;
+}
+
+.new {
+  background-color: #cfc;
+}
+
+strike {
+  color: #999;
+}
+
+code, pre       {
+  font-family: "Bitstream Vera Sans Mono", monaco, "Courier New", courier, monospace;
+  background: inherit;
+  color: #333;
+  font-size: 80%
+}
+
+  /*  Work around IE/Win code size bug - courtesy Jesper, waffle.wootest.net  */
+
+* html code     {
+  font-size : 105%;
+}
+
+.sentence {
+  text-transform: none;
+}
+
+/*-------------------------------------------------
+TOP PROMOTION
+-------------------------------------------------*/
+
+div#toppromo {
+  text-align: center;
+  background-color: #205BAB;
+  padding: 5px;
+  color: #fff;
+  font-size: 10px;
+  border-bottom: 1px solid #efefef;
+  margin-bottom: 20px;
+}
+
+
+/*-------------------------------------------------
+STRUCTURE
+-------------------------------------------------*/
+
+div#Container {
+  margin: 0 auto;
+  text-align: center;
+  width: 85%;
+  min-width: 750px;
+}
+
+div#centeredalert {
+  text-align: center;
+  width: 100%;
+}
+
+.ClearAll {
+  padding: 0px;
+  clear: both;
+  font-size: 0px;
+}
+
+.Left {
+  clear: left;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  width: 70%;
+  float: left;
+}
+
+.Full {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  width: 100%;
+  clear: left;
+}
+
+.Right {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  float: left;
+  width: 30%;
+}
+
+#Header {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin: 0 0 20px 0;
+  text-align: left;
+}
+
+
+/*-------------------------------------------------
+BLANK SLATE
+-------------------------------------------------*/
+
+div#blankslate h2, div#blankslate h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 15px 0;
+  padding: 5px;
+  background-color: #ff6;
+  color: #000;
+}
+
+div#blankslate h3 {
+  font-size: 14px;
+  margin: 0 0 5px 0;
+  padding: 0;
+  background-color: #fff;
+  color: #000;
+}
+
+div#blankslate h2 a.admin {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Lucida Grande", verdana, arial, helvetica, sans-serif;
+}
+
+div#blankslate p a {
+  font-family: "Lucida Grande", verdana, arial, helvetica, sans-serif;
+  font-size: 12px;
+}
+
+div#blankslate p {
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+div#blankslate img {
+  margin-bottom: 7px;
+}
+
+/*-------------------------------------------------
+SECTION HEADER
+-------------------------------------------------*/
+
+.SectionHeader {
+  margin: 0 0 20px 0;
+}
+
+.SectionHeader h1 /* title of the page */ {
+  padding-bottom: 2px;
+  border-bottom: 1px solid #666;
+  margin: 0;
+  font-size: 24px;
+  font-family: helvetica, arial;
+  color: #000;
+}
+
+.SectionHeader h3 {
+  font-family: verdana;
+  padding: 2px 0 0 0;
+  margin: 0 0 0 0;
+  font-size: 10px;
+  font-weight: normal;
+  color: #666;
+}
+
+.SectionHeader strong {
+  color: #f00;
+}
+
+/*-------------------------------------------------
+LIST HEADER
+-------------------------------------------------*/
+
+.ListHeader {
+  margin: 0;
+}
+
+.ListHeader h1 /* title of the page */ {
+  padding: 0;
+  margin: 0 0 5px 0;
+  font-size: 24px;
+  font-family: helvetica, arial;
+  color: #000;
+}
+
+.ListHeader h3 {
+  font-family: verdana;
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+  font-weight: normal;
+  color: #666;
+}
+
+.ListHeader p {
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+  padding: 0 0 5px 0;
+}
+
+
+/*-------------------------------------------------
+FADE EFFECT
+-------------------------------------------------*/
+
+#fade {
+  background-color: #ffff99;
+}
+
+/*-------------------------------------------------
+TADA LISTS
+-------------------------------------------------*/
+
+div.tadalist {
+  background: #fff;
+  margin: 10px 0 0 0;
+  width: 100%;
+}
+
+.Sidebar div.tadalist ul li {
+  font-size: 14px;
+}
+
+div.tadalist ul li {
+  font-size: 16px;
+	line-height: 1.3em;
+  color: #000;
+  vertical-align: top;
+  padding-bottom: 4px;
+}
+
+div.tadalist ul li input.check {
+  /* width: 1%; */
+  width: 15px;
+}
+
+div.tadalist td.itemtext {
+  width: 100%;
+}
+
+div.tadalist ul#incomplete_items li img {
+  padding-top: 3px;
+}
+
+
+div.tadalist ul#completed_items li {
+  font-size: 10px;
+  color: #999;
+  vertical-align: middle;
+  padding-bottom: 1px;
+}
+
+div.additem {
+  font-size: 11px;
+  padding: 5px 0 0 6px;
+  margin: 0 0 10px 20px;
+}
+
+div.additem input {
+  padding: 5px;
+  width: 350px;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.dragger { cursor: move; }
+.donelink { background-color: yellow; padding: 3px }
+
+li.check div.spinner {
+  display: block;
+  height: 5px;
+  width: 21px;
+  background-image: url(/images/dots-white.gif);
+  line-height: 16px;
+  float: left;
+  margin-right: 5px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+form#new_item {
+  display: none;
+  margin-top: 5px;
+  padding-left: 3px;
+}
+
+div.adding_item div#additem {
+  display: none;
+}
+
+div.adding_item form#new_item {
+  display: block;
+}
+
+div.additem span#delete_link {
+  display: none;
+}
+
+div.completed form#new_item {
+  margin-top: 0;
+}
+
+div.completed div.additem span#delete_link {
+  display: inline;
+}
+
+/* Reorder links */
+
+span#reorder_link, span#stop_reordering_link {
+  display: none;
+}
+
+body.reorderable span#reorder_link {
+  display: inline;
+}
+
+body.reordering span#reorder_link {
+  display: none;
+}
+
+body.reordering span#stop_reordering_link {
+  display: inline;
+}
+
+div.tadalist ul li img.dragger {
+  display: none;
+}
+
+body.reordering div.tadalist li img.dragger {
+  display: inline;
+}
+
+body.reordering div#non_reorderable {
+  display: none;
+}
+
+/*-------------------------------------------------
+SHARED WITH
+-------------------------------------------------*/
+
+div#sharedwith {
+  margin: 0 0 20px 0;
+  background: #ffc;
+  padding: 5px;
+  font-size: 12px;
+}
+
+div#sharedwith ul {
+  margin: 5px 0;
+}
+
+div#sharedwith li {
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/*-------------------------------------------------
+OTHER
+-------------------------------------------------*/
+
+div.signup h4 {
+  font-size: 10px;
+  font-weight: normal;
+  color: #999;
+  margin: 2px 0 3px 0;
+  width: 85%;
+  padding: 0;
+}
+
+div#centeredalert h1 {
+  font-size: 16px;
+  margin: 10px 0;
+  padding: 0;
+  color: #900;
+}
+
+div#centeredalert h2 {
+  font-size: 11px;
+  margin: 30px 0;
+  padding: 0;
+  color: #000;
+  font-weight: normal;
+}
+
+div.completedlists {
+  margin-bottom: 35px;
+}
+
+div.older ul li, div.oldest ul li {
+  list-style: none;
+  padding: 0 0 6px 0;
+  margin-left: 0;
+  font-size: 14px;
+}
+
+div.older ul, div.oldest ul {
+  margin-bottom: 10px;
+}
+
+div.oldest ul li, div.completedlists ul li {
+  list-style: none;
+  display: inline;
+  padding: 0 0 6px 0;
+  margin-left: 0;
+  font-size: 10px;
+}
+
+div.recent {
+  margin-top: -10px;
+  margin-bottom: 30px;
+  font-size: 12px;
+}
+
+div.recent h1, div.greybox h1, div.older h1, div.oldest h1 {
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+  font-size: 10px;
+  line-height: 12px;
+  padding: 10px 0 1px 0;
+  font-weight: normal;
+  color: #630;
+  border-bottom: 1px solid #ccc;
+}
+
+div.recent .meta {
+  font-size: 10px;
+  font-weight: normal;
+  color: #666
+}
+
+div.pin {
+  margin: 0 0 10px 0;
+  padding: 5px;
+  font-size: 10px;
+  background-color: #efefef;
+}
+
+div.greybox h1 {
+  padding: 0 0 0 0;
+}
+
+div.greybox {
+  margin: 10px 0 20px 0;
+  padding: 10px 10px 5px 10px;
+  background-color: #efefef;
+}
+
+div.greyoutlinebox {
+  margin: 0px 0 20px 0;
+  padding: 10px 10px 5px 10px;
+  border: 2px solid #efefef;
+}
+
+div.greybox h2,
+div.greyoutlinebox h2 {
+  margin: 0;
+  font-size: 11px;
+  line-height: 15px;
+  padding: 0;
+  font-weight: bold;
+  color: #000;
+}
+
+div.greybox h2.red,
+div.greyoutlinebox h2.red {
+  color: #c30;
+  line-height: 14px;
+}
+
+div.greybox p,
+div.greyoutlinebox p {
+  margin: 0 0 10px 0;
+  font-size: 11px;
+  line-height: 14px;
+  padding: 0;
+  font-weight: normal;
+  color: #333;
+}
+
+div.recent h2 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  line-height: 17px;
+  padding: 0;
+  font-weight: bold;
+}
+
+div.recent h3 {
+  margin: 0 0 15px 0;
+  font-size: 11px;
+  padding: 0;
+  font-weight: normal;
+  color: #999;
+}
+
+div.recent h4 {
+  margin: 0 0 2px 0;
+  font-size: 10px;
+  padding: 0;
+  font-weight: normal;
+  color: #333;
+}
+
+div.recent span {
+  font-size: 10px;
+  color: #999;
+}
+
+div.greybox h2 {
+  margin: 15px 0 0 0;
+  font-size: 12px;
+  padding: 0;
+  font-weight: bold;
+  border-bottom: 1px dotted #ccc;
+}
+
+div.listedit h3, div.signup h3 {
+  margin: 0 0 2px 0;
+  text-transform: uppercase;
+  font-size: 10px;
+  padding: 0;
+  color: #630;
+  font-weight: normal;
+}
+
+div.listedit p {
+  margin: 10px 0 15px 0;
+  font-size: 11px;
+  line-height: 16px;
+  padding: 0;
+  color: #000;
+}
+
+div.listedit h2 {
+  margin: 0 0 2px 0;
+  font-size: 10px;
+  padding: 0;
+  font-style: italic;
+  font-weight: normal;
+  color: #999;
+}
+
+div.listedit input.normal {
+  padding: 3px;
+}
+
+div.listedit input.big {
+  font-size: 20px;
+  font-weight: bold;
+  width: 630px;
+  padding: 5px;
+  margin: 0 0 10px 0;
+}
+
+div.listedit input.medium {
+  font-size: 16px;
+  font-weight: normal;
+  width: 630px;
+  padding: 5px;
+  margin: 0 0 10px 0;
+}
+
+div.listedit textarea {
+  width: 630px;
+  padding: 5px;
+  margin: 0 0 5px 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: courier;
+}
+
+.buttonblock {
+  margin: 20px 0 20px 0;
+  padding: 5px;
+  background-color: #efefef;
+  font-size: 11px;
+  color: #666;
+}
+
+div.signup input.big {
+  font-size: 16px;
+  font-weight: normal;
+  padding: 5px;
+  margin: 0;
+}
+
+div.signup {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+div.signup p {
+  font-size: 11px;
+  font-weight: normal;
+  margin: 0;
+}
+
+div.signup h3 {
+  margin: 15px 0 2px 0;
+}
+
+div.signup h3 strong {
+  color: #000;
+}
+
+div.signup h3.group {
+  margin: 15px 0 2px 0;
+  border-top: 1px dotted #ccc;
+  padding: 4px 0 0 0;
+}
+
+div.formattingtips p {
+  font-size: 11px;
+  line-height: 14px;
+  margin: 0 0 15px 0;
+}
+
+div.FAQ h1 {
+  margin: 0 0 2px 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+div.FAQ p {
+  margin: 0 0 20px 0;
+  padding: 0;
+  width: 90%;
+  line-height: 15px;
+}
+
+div#box h1 {
+  font-size: 18px;
+}
+
+div#box h2 {
+  border-bottom: 1px solid #666;
+  color: #393;
+}
+
+/*-------------------------------------------------
+NEW FOR PROPORTIONAL WIDTH VERSION
+-------------------------------------------------*/
+
+.col {
+  padding: 0 20px;
+  text-align: left;
+}
+
+.Left .col {
+  padding: 0 70px 40px 6px;
+}
+
+.Right .col {
+  min-width: 200px;
+  border-left: 1px dotted #dcdcdc;
+  padding: 0 20px;
+}
+
+.LeftDash .col {
+  border-right: 1px dotted #dcdcdc;
+  padding: 0 20px;
+}
+
+.RightDash .col {
+  padding: 0 30px 0 20px;
+}
+
+
+/*-------------------------------------------------
+SHARING LISTS
+-------------------------------------------------*/
+
+div.sharelist, div#send_shares div#box {
+  background-color: #f0f0f0;
+  border: 7px solid #C6DCDD;
+  font-size: 11px;
+  padding: 10px;
+  margin: 0 0 15px 0;
+}
+
+div#send_shares h1 {
+  padding: 0;
+  margin: 0 0 5px 0;
+  font-size: 24px;
+  font-family: helvetica, arial;
+  color: #000;
+}
+
+div.sharelist h3, div#send_shares h3 {
+  color: #000;
+  margin: 10px 0 2px 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+div.sharelist p, div#send_shares p {
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+textarea.emails, textarea.personalnote {
+  width: 350px;
+  padding: 3px;
+  font-size: 12px;
+}
+
+div#send_shares input.submit {
+  margin: 5px 0 0 0;
+}
+
+/*-------------------------------------------------
+ALERTS
+-------------------------------------------------*/
+
+div#notice, div#alert {
+  margin: 10px 0;
+  font-size: 11px;
+  background-color: #390;
+  color: #fff;
+  padding: 3px;
+}
+
+div#alert {
+  background-color: #c33;
+  color: #fff;
+}
+
+/*-------------------------------------------------
+FAQs
+-------------------------------------------------*/
+
+div.faqs {
+  margin: 0 0 20px 0;
+}
+
+div.faqs h2 {
+  font-size: 14px;
+  margin: 20px 0 2px 0;
+  padding: 0;
+  color: #060;
+}
+
+div.faqs p {
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+/*-------------------------------------------------
+DOT STAT ON ALL
+-------------------------------------------------*/
+
+ul.mylists li {
+  list-style: none;
+  margin: 0; padding: 0;
+}
+
+ul.mylists li {
+  font-family: "Lucida Grande", arial, sans-serif;
+  color: #333;
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  line-height: 17px;
+  padding: 0 0 0 20px;
+  font-weight: bold;
+}
+
+.open-1 {
+  background: url(/images/open-1.gif) 0 3px no-repeat;
+}
+
+.open-2 {
+  background: url(/images/open-2.gif) 0 3px no-repeat;
+}
+
+.open-3 {
+  background: url(/images/open-3.gif) 0 3px no-repeat;
+}
+
+.open-4 {
+  background: url(/images/open-4.gif) 0 3px no-repeat;
+}
+
+.open-5 {
+  background: url(/images/open-5.gif) 0 3px no-repeat;
+}
+
+/*-------------------------------------------------
+TADA-BASECAMP COMPARISON TABLE
+-------------------------------------------------*/
+
+div.compare {
+  margin-bottom: 20px;
+}
+
+div.compare h1 {
+  margin: 0 0 3px 0;
+  padding: 0;
+  font-size: 24px;
+  font-family: helvetica, arial;
+  color: #000;
+}
+
+div.compare h3 {
+  margin: 0 0 15px 0;
+  font-size: 10px;
+  font-weight: normal;
+}
+
+div.compare p {
+  margin: 0 0 15px 0;
+  padding: 0;
+  width: 65%;
+}
+
+table.comparisonchart {
+  border: 0;
+  width: 700px;
+  margin-bottom: 20px;
+}
+
+table.comparisonchart small {
+  font-weight: normal;
+}
+
+table.comparisonchart th {
+  text-align: center;
+  padding: 2px 10px;
+}
+
+table.comparisonchart th.label {
+  text-align: left;
+  padding: 5px 0;
+  font-size: 14px;
+  vertical-align: bottom;
+  color: #000;
+}
+
+table.comparisonchart td {
+  padding: 5px;
+  vertical-align: middle;
+  font-size: 12px;
+  text-align: center;
+}
+
+table.comparisonchart td.feature {
+  padding: 5px;
+  padding-right: 10px;
+  vertical-align: top;
+  font-size: 14px;
+  text-align: right;
+}
+
+table.comparisonchart td.type {
+  padding: 5px 20px 0 0;
+  vertical-align: top;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: left;
+  color: #f00;
+  background-color: #fff;
+}
+
+table.comparisonchart tr.break td {
+  border-top: 2px solid #333;
+}
+
+table.comparisonchart tr.stripe {
+  background-color: #f5f5f5;
+}
+
+/*-------------------------------------------------
+ERROR HANDLING
+-------------------------------------------------*/
+
+.fieldWithErrors {
+  padding: 5px;
+  background-color: red;
+  display: inline;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid #F00;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+  margin-left: 25px;
+}
+
+div.listlimit {
+  font-size: 11px;
+  padding: 7px;
+  width: 450px;
+  text-align: left;
+  margin-left: 250px;
+}
+
+/*-------------------------------------------------
+FOOTER
+-------------------------------------------------*/
+
+div#footer {
+  clear: left;
+  border-top: 1px solid #dcdcdc;
+  padding: 10px 0;
+  font-size: 10px;
+  line-height: 14px;
+  color: #666;
+  text-align: left;
+}
+
+
+/*-------------------------------------------------
+HEADER/NAV ON SHOW.RHTML (rjs - 1/3/05)
+-------------------------------------------------*/
+
+#Nav {
+  float: left;
+  padding: 0 15px 0 0;
+  margin: 0 0 0 0;
+  background: url(/images/tada-header-bg.gif) top right no-repeat;
+  font-size: 11px;
+  line-height: 53px;
+}
+
+#Nav a { padding:0;}
+
+#Nav #Logo img {
+  float: left;
+  border: none;
+  width: 61px;
+}
+
+#Nav #Logo:hover {
+  background: none;
+}
+
+#Nav span#MyListsThisList {
+  font-size: 14px;
+  margin: 0 2px 0 0;
+}
+
+#Nav span#MyListsThisList a {
+  margin: 0 8px;
+}
+
+#Nav span#ThisListLinks {
+  color: #666;
+  font-size: 10px;
+  margin-left: 2px;
+  margin-right: 10px;
+}
+
+#Nav #MyListsThisList strong {
+  font-size: 12px;
+}
+
+#Nav h1 {
+  display: inline;
+  padding-bottom: 2px;
+  margin: 0 8px;
+  font-size: 24px;
+  font-family: helvetica, arial;
+  color: #000;
+}
+
+#delete_link {
+  color: #999;
+}
+
+/*-------------------------------------------------
+LOGIN SCREEN (.login is body class)
+-------------------------------------------------*/
+
+.login {
+  background: #f0f0f0;
+}
+
+.login img#logo {
+  float: left;
+}
+
+.login div#errorMessage, .login div#Message {
+	text-align: left;
+	font-weight: bold;
+	border-top: 1px solid #c99;
+	border-bottom: 1px solid #c99;
+	padding: 5px;
+	font-size: 11px;
+	margin: 0 0 0 80px;
+	background: #c00;
+	color: #fff;
+}
+
+.login div#errorMessage a {
+  color: #fff;
+}
+
+.login div#Message {
+  background: #080;
+}
+
+.login div.Container {
+	width: 500px;
+	margin: 60px auto 20px auto;
+	min-width: inherit;
+}
+
+.login h1 {
+	margin-bottom: 20px;
+}
+
+.login dl {
+	margin: 10px 0 0 80px;
+}
+
+.login dt {
+	float: left;
+	width: 80px;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.login dd {
+	margin: 0 0 5px 90px;
+	font-size: 11px;
+	line-height: 24px;
+	color: #666;
+	margin-left: 80px;
+}
+
+.login input {
+	font-size: 14px;
+}
+
+.login input#password {
+	width: 150px;
+}
+
+.login input#username {
+  width: 150px;
+}
+
+.login div#Dialog {
+	border: 10px solid #ccc;
+	padding: 15px 20px 10px 20px;
+	background: #fff;
+  text-align: left;
+}
+
+div#recently_shared_with p {
+  margin-bottom: 0;
+}
+
+div#recently_shared_with ul {
+  margin: 5px 0 10px 10px;
+}
+
+div#recently_shared_with li {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+img.sharebug {
+  margin-left: 2px;
+  vertical-align: middle;
+}
+
+div#new_item {
+  margin-top: 5px;
+}
+
+div#new_item p {
+  margin-top: 5px;
+}
+
+.login div#First {
+	padding: 15px 30px 10px 30px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.login div#First h1 {
+  font-size: 14px;
+  color: #393;
+  margin: 0 0 10px 0;
+}
+
+.login div#First h2 {
+  font-size: 12px;
+  color: #000;
+  margin: 0 0 2px 0;
+  padding: 0;
+}
+
+.login div#First p {
+  font-size: 12px;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+/*-------------------------------------------------
+NOV 4 2006
+-------------------------------------------------*/
+
+div.utilities {
+	margin: 50px 0 0 0;
+	padding-top: 10px;
+	border-top: 2px solid #333;
+}
+
+div.utilities h2 {
+	font-size: 14px;
+	margin: 0 0 2px 0;
+	padding: 0;
+}
+
+div.utilities p {
+	font-size: 12px;
+	margin: 0 0 10px 0;
+	padding: 0;
+}

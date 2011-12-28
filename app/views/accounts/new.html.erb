@@ -1,0 +1,60 @@
+
+
+<%= form_for(@user) do |f| %>
+    <% if @user.errors.any? %>
+    <div id="error_explanation" class ="error">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this task from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div class = "register ">
+
+<fieldset>
+<legend>Registration form</legend>
+
+  <div class= "span-16 ">
+
+ 
+  <div class= "span-5 ">
+    <%= f.label :login %>
+	</div>	<div class="span-11 last">
+    <%= f.text_field :login , :class => 'text' %>
+
+  </div>
+  <div class= "span-5 ">
+    <%= f.label :password %>
+		</div>
+		<div class="span-11 last">	
+    <%= f.password_field :password,  :class => 'text' %>
+  </div>
+
+  <div class= "span-5 ">
+    <%= f.label :name %>
+			</div>
+					<div class="span-11 last">	
+    <%= f.text_field :name,  :class => 'text' %>
+	  </div>
+
+  <div class= "span-5 ">
+    <%= f.label :email %>
+				</div>
+						<div class="span-11 last">	
+    <%= f.text_field :email, :class => 'text' %>
+
+  	  </div>
+  
+  <div class="actions">
+    <%= submit_tag %>
+  </div>
+  </div>
+  <div class="span-8 last">
+ </div>
+ </fieldset>
+</div>
+<% end %>

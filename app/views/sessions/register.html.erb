@@ -1,0 +1,33 @@
+<div class="col">
+<div class="SectionHeader">
+<div class="signup">
+<%= form_tag(@user) do |f| %>
+ 
+
+  <div class="big">
+    <%= label_tag :login %><br />
+    <%= text_field_tag :login %>
+  </div>
+  <div class="big">
+    <%= label_tag :password %><br />
+    <%= text_field_tag :password %>
+  </div>
+
+    <div class="big">
+    <%= label_tag :name %><br />
+    <%= text_field_tag :name %>
+  </div>
+  <div class="big">
+    <%= label_tag :email %><br />
+    <%= text_field_tag :email %>
+  </div>
+  
+  
+  <div class="actions">
+    <%= submit_tag %>
+  </div>
+<% end %>
+
+</div>
+</div>
+</div>

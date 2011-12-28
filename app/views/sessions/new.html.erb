@@ -1,0 +1,32 @@
+
+
+<div class="span-10 prepend-6 ">
+
+<div class="login box ">
+
+
+<%= form_tag session_path do %>
+
+
+
+
+  <p>Please log in.</p>
+  <p>
+    <label>Username:</label>
+	
+    <%= text_field_tag :login , nil, :class => 'text' %>
+  </p>
+  <p>
+    <label>Password:</label>
+    <%= password_field_tag :password , nil, :class => 'text'%>
+  </p>
+  <p><%= submit_tag 'login' %></p>
+  <p><%= link_to 'Sign up for free', new_accounts_path %>
+<% end %>
+
+</div>
+
+</div>
+<div class="span-8 last">
+
+</div>

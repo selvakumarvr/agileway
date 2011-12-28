@@ -1,0 +1,3 @@
+
+$('#tasks').append("<%= escape_javascript(render :partial => "tasks/show", :locals => { :status => 'A' }, :object => @task,:as => :task) %>");
+$('#new_task')[0].reset();

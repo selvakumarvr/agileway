@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  notes: MyText
+  effective_at: 2011-10-16 20:55:34
+  duedate_at: 2011-10-16 20:55:34
+  status: MyString
+
+two:
+  title: MyString
+  notes: MyText
+  effective_at: 2011-10-16 20:55:34
+  duedate_at: 2011-10-16 20:55:34
+  status: MyString

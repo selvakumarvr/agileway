@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Agileway</title>
+  
+
+    <!--[if lt IE 8]><link rel="stylesheet" href="../blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	
+    <%= stylesheet_link_tag   "blueprint/screen",  media="screen, projection" %>
+
+		
+		    <%= stylesheet_link_tag   "blueprint/screen" %>
+
+  <%= stylesheet_link_tag    "application" %>
+
+  <%= csrf_meta_tags %>
+  <%= javascript_include_tag 'jquery.js',  'application' %>
+
+</head>
+<body class="container">
+  <div id="header">
+  
+    <div id="user_bar" class="span-24 last right">
+      <% if logged_in? %>
+          <%= link_to "logout", logout_path %>
+  
+      <% end %>
+    </div>
+  </div>
+  <div id="main">
+    <%= content_tag(:p, notice, :class => 'notice') if notice.present? %>
+    <%= content_tag(:p, alert, :class => 'alert') if alert.present? %>
+    <%= yield %>
+  </div>
+  <div id="footer">
+ 
+  </div>
+</body>
+</html>

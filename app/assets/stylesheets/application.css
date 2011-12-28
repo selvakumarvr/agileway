@@ -1,0 +1,21 @@
+.login {
+	margin-top:150px;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 10px solid #CCCCCC;
+    padding: 15px 20px 10px;
+    text-align: left;
+	top:50px;
+	
+}
+
+body {
+background: none repeat scroll 0 0 #F0F0F0;
+}
+
+.register {
+	margin-top:50px;
+	
+    text-align: left;
+	
+	
+}
