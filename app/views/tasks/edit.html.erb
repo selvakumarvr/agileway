@@ -1,6 +1,18 @@
 <h1>Editing task</h1>
 
-<%= render 'form' %>
+<%= form_for([@tasklist, @task],:html => { :method => :put }) do |f| %>
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+
 
 <%= link_to 'Show', @task %> |
 <%= link_to 'Back', tasks_path %>

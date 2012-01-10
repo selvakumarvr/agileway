@@ -73,7 +73,7 @@ class TasksController < ApplicationController
 
     respond_to do |format|
       if @task.update_attributes(params[:task])
-        format.html { redirect_to @task, notice: 'Task was successfully updated.' }
+        format.html { redirect_to @tasklist, notice: 'Task was successfully updated.' }
         format.json { head :ok }
       else
         format.html { render action: "edit" }
@@ -92,7 +92,8 @@ class TasksController < ApplicationController
     @task.destroy
 
     respond_to do |format|
-      format.html { redirect_to tasks_url }
+	format.html { redirect_to @tasklist, notice: 'Task was successfully deleted.' }
+      
       format.json { head :ok }
     end
   end

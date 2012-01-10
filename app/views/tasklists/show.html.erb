@@ -12,14 +12,16 @@
 </p>
 
 
-<h3>Add new Task</h3>
+<h3>Current Tasks </h3>
    
 <div id="tasks">
 <%= render :partial => "tasks/show", 
            :collection => @tasklist.tasks,:locals => { :status => 'A' }, :as => :task  %>
 
 </div>
+<% if(!@tasklist.completed_task.empty?)
 
+%>
 <h3>Completed task </h3>
    
 <div id="completedtask">
@@ -27,7 +29,12 @@
            :collection => @tasklist.completed_task, :locals => { :status => 'C' }, :as => :task  %>
 
 </div>		   
-		  
+	<% 
+
+end if
+%>
+
+<h3>Add new Task</h3>	
 
 <%= render "tasks/form" %>
 <%= link_to 'Back', tasklist_path %>
