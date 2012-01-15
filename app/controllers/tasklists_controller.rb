@@ -65,7 +65,7 @@ class TasklistsController < ApplicationController
     @tasklist = current_user.tasklists.find(params[:id])
 
     respond_to do |format|
-      if @Tasklist.update_attributes(params[:Tasklist])
+      if @tasklist.update_attributes(params[:tasklist])
         format.html { redirect_to @tasklist, notice: 'Tasklist was successfully updated.' }
         format.json { head :ok }
       else
