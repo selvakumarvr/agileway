@@ -14,7 +14,7 @@ group :development, :test do
   gem 'sqlite3'
 end
 
-
+#just adding comments..
 
 # Gems used only for assets and not required
 # in production environments by default.
