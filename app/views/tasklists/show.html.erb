@@ -15,7 +15,7 @@
    
 <div id="tasks">
 <%= render :partial => "tasks/show", 
-           :collection => @tasklist.tasks,:locals => { :Status => 'A' }, :as => :task  %>
+           :collection => @tasklist.tasks,:locals => { :status => 'A' }, :as => :task  %>
 
 </div>
 <% if(!@tasklist.completed_task.empty?)
@@ -25,7 +25,7 @@
    
 <div id="completedtask">
 <%= render :partial => "tasks/show", 
-           :collection => @tasklist.completed_task, :locals => { :Status => 'C' }, :as => :task  %>
+           :collection => @tasklist.completed_task, :locals => { :status => 'C' }, :as => :task  %>
 
 </div>		   
 	<% 
