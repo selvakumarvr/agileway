@@ -7,12 +7,16 @@ gem 'rails', '3.1.0'
 
 # gemfile
 group :production do
+gem 'therubyracer-heroku', '0.8.1.pre3'
+
  
   gem 'pg'
 end
 
 
 group :development, :test do
+gem 'therubyracer-heroku', '0.8.1.pre3'
+
   gem 'pg'
 end
 
