@@ -8,9 +8,8 @@ class CreateUsers < ActiveRecord::Migration
 
       t.timestamps
 	  
-	  
-	add_column :task, :user_id, :integer
-	add_column :tasklists, :user_id, :integer
+	
+	
     end
   end
 end
